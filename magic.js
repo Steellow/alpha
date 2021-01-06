@@ -19,26 +19,29 @@ function random() {
 
 function getList() {
     let input = document.getElementById("input").value
-    let splitted = input.split("\n")
+    let list = input.split("\n")
 
-    return splitted
+    list = list.filter(function(el) {
+        // Remove empty strings
+        return el != "";
+    });
+
+    list.forEach((currentValue, index, theArray) => {
+        theArray[index] = currentValue.trim()
+    })
+
+    return list
 }
 
 function printList(list) {
-    document.getElementById("input").value = null // Adds empty string to the first line of textarea, must be parsed out with 'getPrettifiedList'
+    document.getElementById("input").value = null
 
-    getPrettifiedList(list).forEach(element => {
+    list.forEach(element => {
         document.getElementById("input").value += element + "\n"
     });
 }
 
-function getPrettifiedList(list) {
-    return list.filter(function(el) {
-        return el != "";
-    });
-}
-
-// Fisher-Yates shuffle algorithm
+// Fisher-Yates shuffle algorithm from https://stackoverflow.com/q/2450954
 function shuffle(array) {
     var currentIndex = array.length,
         temporaryValue, randomIndex;
