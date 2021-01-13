@@ -18,3 +18,4 @@ Build css with `npm run build-css`
   - Button text
 - Add dark mode
 - js 'onclick' vs 'addEventListener'
+- Wider textarea on wider screens
