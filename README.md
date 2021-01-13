@@ -14,3 +14,6 @@ Build css with `npx tailwindcss build src/styles.css -o src/compiled.css`
 
 - If only 1 line, break commas automatically (otherwise not)
 - Figure out how to make GitHub Pages work without pushing `src/compiled.css`
+- `ctrl`+`enter` to sort list
+  - Button text
+-
