@@ -9,24 +9,31 @@
   </head>
 
   <body>
-    <div class="mx-auto w-96 p-3">
-      <h1 class="text-4xl font-bold pb-6 text-center">Alphabetizer</h1>
+    <div class="flex flex-col justify-between mx-auto w-96 min-h-screen p-3">
+      <div>
+        <h1 class="text-4xl font-bold pb-6 text-center">Alphabetizer</h1>
 
-      <div class="flex">
-        <textarea
-          id="input"
-          cols="30"
-          rows="20"
-          placeholder="Paste your list here and click 'Alphabetize'"
-          class="resize-y border rounded mr-3 p-1 border-gray-400"
-        ></textarea>
+        <div class="flex">
+          <textarea
+            id="input"
+            cols="30"
+            rows="20"
+            placeholder="Paste your list here and click 'Alphabetize'"
+            class="resize-y border rounded mr-3 p-1 border-gray-400"
+          ></textarea>
 
-        <div class="flex flex-col">
-          <button id="alphabetizeButton" class="blueButton">Alphabetize</button>
-          <button id="reverseButton" class="blueButton">Reverse</button>
-          <button id="randomButton" class="blueButton">Random</button>
+          <div class="flex flex-col">
+            <button id="alphabetizeButton" class="blueButton">Alphabetize</button>
+            <button id="reverseButton" class="blueButton">Reverse</button>
+            <button id="randomButton" class="blueButton">Random</button>
+          </div>
         </div>
       </div>
+
+      <footer class="mx-auto">
+        <a href="https://hanki.dev/" target="_blank" class="underline hover:font-bold focus:font-bold">hanki.dev</a> /
+        <a href="https://github.com/steellow/alpha" target="_blank" class="underline hover:font-bold focus:font-bold">source code</a>
+      </footer>
     </div>
 
     <script src="magic.js"></script>
