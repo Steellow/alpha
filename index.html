@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Hannes Kinnunen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Hannes Kinnunen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alphabetizer</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
+  </head>
 
-<body class="h-screen">
-    <div class="max-w-5xl mx-auto">
-        <h1 class="text-4xl font-bold">Alphabetizer</h1>
-        <div class="items-center grid grid-cols-2 gap-4">
-            <textarea id="input" cols="20" rows="20" class="resize-y border rounded"></textarea>
-            <div class="align-top">
-                <button id="alphabetizeButton" class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 my-3 w-32 rounded">Alphabetize</button>
-                <button id="reverseButton" class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 my-3 w-32 rounded">Reverse</button>
-                <button id="randomButton" class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 my-3 w-32 rounded">Random</button>
-            </div>
-        </div>
+  <body>
+    <h1 class="text-4xl font-bold py-6">Alphabetizer</h1>
+
+    <div class="flex">
+      <textarea id="input" cols="30" rows="20" class="resize-y border rounded"></textarea>
+
+      <div class="flex flex-col">
+        <button id="alphabetizeButton" class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 my-3 w-32 rounded">
+          Alphabetize
+        </button>
+        <button id="reverseButton" class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 my-3 w-32 rounded">Reverse</button>
+        <button id="randomButton" class="block bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 my-3 w-32 rounded">Random</button>
+      </div>
     </div>
-    <script src="magic.js"></script>
-</body>
 
+    <script src="magic.js"></script>
+  </body>
 </html>
