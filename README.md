@@ -1,6 +1,8 @@
 # Alphabetizer
 
-Live demo at https://hanki.dev/alpha (coming soon)
+Simple webapp to alphabetize lists. Live demo at https://hanki.dev/alpha
+
+Project goal was to learn [tailwindcss](https://tailwindcss.com) and [npm](https://www.npmjs.com/)
 
 ## npm
 
