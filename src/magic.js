@@ -22,13 +22,10 @@ function getList() {
   input = input.replaceAll(",", "\n");
   let list = input.split("\n");
 
-  list = list.filter(function (el) {
-    // Remove empty strings
-    return el != "";
-  });
+  list = list.filter((el) => el !== "");
 
-  list.forEach((currentValue, index, theArray) => {
-    theArray[index] = currentValue.trim();
+  list.forEach((currentValue, index) => {
+    list[index] = currentValue.trim();
   });
 
   return list;
@@ -36,7 +33,7 @@ function getList() {
 
 function printList(list) {
   let inputElement = document.getElementById("input");
-  inputElement.value = null;
+  inputElement.value = "";
 
   list.forEach((element) => {
     inputElement.value += element + "\n";
@@ -47,7 +44,7 @@ function printList(list) {
 
 // Fisher-Yates shuffle algorithm from https://stackoverflow.com/q/2450954
 function shuffle(array) {
-  var currentIndex = array.length,
+  let currentIndex = array.length,
     temporaryValue,
     randomIndex;
 
