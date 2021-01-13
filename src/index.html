@@ -9,15 +9,23 @@
   </head>
 
   <body>
-    <h1 class="text-4xl font-bold py-6">Alphabetizer</h1>
+    <div class="mx-auto w-96 p-3">
+      <h1 class="text-4xl font-bold pb-6 text-center">Alphabetizer</h1>
 
-    <div class="flex">
-      <textarea id="input" cols="30" rows="20" class="resize-y border rounded"></textarea>
+      <div class="flex">
+        <textarea
+          id="input"
+          cols="30"
+          rows="20"
+          placeholder="Paste your list here and click 'Alphabetize'"
+          class="resize-y border rounded mr-3 p-1 border-gray-600"
+        ></textarea>
 
-      <div class="flex flex-col">
-        <button id="alphabetizeButton" class="blueButton">Alphabetize</button>
-        <button id="reverseButton" class="blueButton">Reverse</button>
-        <button id="randomButton" class="blueButton">Random</button>
+        <div class="flex flex-col">
+          <button id="alphabetizeButton" class="blueButton">Alphabetize</button>
+          <button id="reverseButton" class="blueButton">Reverse</button>
+          <button id="randomButton" class="blueButton">Random</button>
+        </div>
       </div>
     </div>
 
