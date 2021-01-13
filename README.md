@@ -19,3 +19,4 @@ Build css with `npm run build-css`
 - Add dark mode
 - js 'onclick' vs 'addEventListener'
 - Wider textarea on wider screens
+- printList(): print whole list at once instead of one word at a time
