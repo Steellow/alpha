@@ -17,3 +17,4 @@ Build css with `npm run build-css`
 - `ctrl`+`enter` to sort list
   - Button text
 - Add dark mode
+- js 'onclick' vs 'addEventListener'
