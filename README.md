@@ -8,7 +8,7 @@ Project goal was to learn [tailwindcss](https://tailwindcss.com) and [npm](https
 
 Build css with `npm run build-css`
 
-`src/compiled.css` should not be in repository but is there in order for GitHub Pages to work.
+`src/compiled.css` should not be in repository but is there in order for GitHub Pages to work
 
 ## ideas
 
