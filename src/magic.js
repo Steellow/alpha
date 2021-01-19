@@ -29,7 +29,7 @@ function getList() {
   let input = document.getElementById("input").value;
 
   if (!/\r|\n/.exec(input)) {
-    // If input has no line breaks, change commas into line breaks
+    // If input has no line breaks, change commas into line breaks. Check https://stackoverflow.com/q/15131072/
     input = input.replaceAll(",", "\n");
   }
 
