@@ -46,12 +46,13 @@ function getList() {
 
 function printList(list) {
   let inputElement = document.getElementById("input");
-  inputElement.value = "";
 
+  let listAsString = "";
   list.forEach((element) => {
-    inputElement.value += element + "\n";
+    listAsString += element + "\n";
   });
 
+  inputElement.value = listAsString;
   inputElement.select();
 }
 
