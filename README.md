@@ -13,8 +13,6 @@ Build css with `npm run build-css`
 ## ideas
 
 - Figure out how to make GitHub Pages work without pushing `src/compiled.css`
-- `ctrl`+`enter` to sort list
-  - Button text
 - Add dark mode
 - js 'onclick' vs 'addEventListener'
 - Wider textarea on wider screens

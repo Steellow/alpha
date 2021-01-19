@@ -2,6 +2,14 @@ document.getElementById("alphabetizeButton").onclick = alphabetize;
 document.getElementById("reverseButton").onclick = reverse;
 document.getElementById("randomButton").onclick = random;
 
+document.addEventListener("keyup", keyUpListener, false);
+
+function keyUpListener(e) {
+  if (e.ctrlKey && e.keyCode == 13) {
+    alphabetize();
+  }
+}
+
 function alphabetize() {
   let sorted = getList().sort();
   printList(sorted);
