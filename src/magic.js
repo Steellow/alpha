@@ -19,7 +19,12 @@ function random() {
 
 function getList() {
   let input = document.getElementById("input").value;
-  input = input.replaceAll(",", "\n");
+
+  if (!/\r|\n/.exec(input)) {
+    // If input has no line breaks, change commas into line breaks
+    input = input.replaceAll(",", "\n");
+  }
+
   let list = input.split("\n");
 
   list = list.filter((el) => el !== "");
