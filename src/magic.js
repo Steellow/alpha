@@ -11,12 +11,14 @@ function keyUpListener(e) {
 }
 
 function alphabetize() {
-  let sorted = getList().sort();
+  let sorted = getList().sort((a, b) => a.localeCompare(b));
   printList(sorted);
 }
 
 function reverse() {
-  let sorted = getList().sort().reverse();
+  let sorted = getList()
+    .sort((a, b) => a.localeCompare(b))
+    .reverse();
   printList(sorted);
 }
 
