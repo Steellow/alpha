@@ -1,6 +1,6 @@
 # Alphabetizer
 
-Simple webapp to alphabetize lists. Live demo at https://hanki.dev/alpha
+Simple webapp to alphabetize lists. Live demo at https://git.hanki.dev/alpha
 
 Project goal was to learn [tailwindcss](https://tailwindcss.com) and [npm](https://www.npmjs.com/)
 
